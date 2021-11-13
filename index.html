@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Counter In Javascript</title>
+    <style>
+      
+     
+
+      .container {
+        
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        
+      }
+
+      #btn{
+          width: 90px;
+          height: 60px;
+          font-size: 30px;
+          background-color: greenyellow;
+          color: black;
+      }
+
+      #btn:hover{
+          background-color: aqua;
+          color: grey;
+      }
+     
+      h2 {
+      
+        font-size: 45px;
+        margin: auto;
+
+      }
+
+    </style>
+</head>
+<body>
+    
+   <div class="container">
+       <button  id="btn" onclick="return increment()">+</button>
+       <h2 id="counting"></h2>
+       <button id="btn" onclick="return decrement()">-</button>
+   </div>
+
+   <script>
+
+     var data = 0;
+     
+     document.getElementById("counting").innerHTML=data;
+
+     function increment(){
+       
+        data = data + 1;
+        document.getElementById("counting").innerHTML=data;
+
+     }
+
+     function decrement(){
+        
+        data = data - 1;
+        document.getElementById("counting").innerHTML=data;
+
+     }
+
+
+   </script>
+
+</body>
+</html>
